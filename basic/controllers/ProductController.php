@@ -9,7 +9,7 @@ class ProductController extends Controller
 
   public function actionIndex()
   {
-    echo "SuperNewCataloooooge!s";
+    echo "SuperNewCataloooooge!s)))";
     exit;
   }
 
