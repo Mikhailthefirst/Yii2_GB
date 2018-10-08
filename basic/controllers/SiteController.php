@@ -66,7 +66,7 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-      echo "Hello, world!!";
+      echo "Hello, world!! ;)";
       exit;
     }
     /**

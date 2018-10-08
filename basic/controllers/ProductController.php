@@ -6,11 +6,14 @@ use yii\web\Controller;
  */
 class ProductController extends Controller
 {
+  public $layout = null;
 
   public function actionIndex()
   {
-    echo "SuperNewCataloooooge!s)))";
-    exit;
+    return $this->render('index', [
+      'title' => 'Супертитул',
+      'content' => 'Оочень полезная информация',
+    ]);
   }
 
   // function __construct(argument)
