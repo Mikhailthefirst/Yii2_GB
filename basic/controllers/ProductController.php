@@ -16,6 +16,16 @@ class ProductController extends Controller
     ]);
   }
 
+  public function actionTest()
+  {
+    return $this->render('index', [
+      'title' => '<h1>Хммм</h1>',
+      'content' => 'что-то новенькое<br>',
+    ]);
+  }
+
+
+
   // function __construct(argument)
   // {
   //   // code...
