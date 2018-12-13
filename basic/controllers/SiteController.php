@@ -9,6 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Product;
 
 class SiteController extends Controller
 {
@@ -64,9 +65,21 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
-    public function actionTest()
+    public function actionTestAndMore()
     {
-      echo "Hello, world!! ;)";
+      echo "Hello, <img src=\"https://namudinsider.com/wp-content/uploads/2016/09/sick-2.jpg\" width=\"160\" height=\"100\">superWorld!!<br>";
+
+      $model = Product::findOne(['name' => 'мясо']);
+      var_dump($model->attributes['price'] + 4);
+      // $model->name = 'апельсинчики';
+      // $model->short_description = 'оранжевые';
+      // $model->description = 'без Чебурашек';
+      // $model->price = 8;
+      // $model->customer_id = 33;
+      // $model->save();
+
+
+
       exit;
     }
     /**
